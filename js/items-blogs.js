@@ -255,7 +255,7 @@ const logopiedepagina = Vue.createApp({
       articles: [
         {
           url: "https://fincanaturalmystic.com",
-          image: "/recursos/finca-natural-mystic.webp",
+          image: "../recursos/finca-natural-mystic.webp",
         },
       ],
     });
