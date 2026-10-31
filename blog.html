@@ -54,42 +54,51 @@
 
 <body class="fondo-blog-page">
     <!--Encabezado-->
-    <header class="top">
+    <header class="top header-blog">
         <div id="mySidenav" class="sidenav">
             <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
-            <a href="talleres">Talleres</a>
-            <a href="alojamientos">Alojamientos</a>
-            <a href="tours-sierra-nevada-santa-marta">Tours y Lugares Cercanos</a>
-            <a href="blog">Blog</a>
-            <a href="nosotros">Nosotros</a>
-            <div class="boton-de-reserva movil">
-                <button><a href="https://wa.me/573027453839" target="_blank" alt="WhatsApp" title="Contáctanos">RESERVAR AHORA</a></button>
+            <div id="menu-blog" v-cloak>
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <a :href="article.url" :title="`Ir a ${article.title}`" class="article-link">{{ article.title }}</a>
+                </template>
             </div>
-            <div class="social-icons another movil">
-                <a href="https://instagram.com/fincanaturalmystic/" target="_blank" aria-label="Síguenos en Instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://wa.me/573027453839" target="_blank" aria-label="Contáctanos"><i class="fa fa-whatsapp"></i></a>
+            <div id="boton-de-reserva-movil" class="boton-de-reserva movil">
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <button><a :href="article.url" :title="`Ir a ${article.title}`" target="_blank" class="article-link">{{ article.title }}</a></button>
+                </template> 
+            </div>
+           
+            <div id="iconos-fa-redes-movil" class="social-icons another movil">
+                <template v-for="social in socialLinks" :key="social.name">
+                <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                </template>
             </div>
         </div>
         <nav id="navbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-7 col-5 align-self-center">
-                        <a href=""><img src="recursos/natural-mystic.webp" alt="Finca Natural Mystic" title="Finca Natural Mystic"></a>
+                    <div id="logo" class="col-lg-2 col-md-7 col-5 align-self-center" v-cloak>
+                        <template v-for="article in filteredArticles" :key="article.url">
+                        <a :href="article.url" alt="Finca Natural Mystic" title="Finca Natural Mystic">
+                            <img :src="article.image" alt="Logo Finca Natural Mystic" />
+                        </a>
+                        </template>
                     </div>
                     <div class="col-lg-10 col-md-5 col-7 align-self-center">
-                        <div class="boton-de-reserva pc">
-                            <button><a href="https://wa.me/573027453839" target="_blank">RESERVAR AHORA</a></button>
+                        <div id="boton-de-reserva-pc" class="boton-de-reserva pc">
+                            <template v-for="article in filteredArticles" :key="article.url">
+                                <button><a :href="article.url" :title="`Ir a ${article.title}`" target="_blank" class="article-link">{{ article.title }}</a></button>
+                            </template> 
                         </div>
                         <div class="social-icons square">
                             <div id="page-content-wrapper">
-                                <span class="slide-menu" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                                <span class="slide-menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
                             </div>
                         </div>
-                        <div class="social-icons another pc">
-                            <a href="https://instagram.com/fincanaturalmystic/" target="_blank"
-                                aria-label="Síguenos en Instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="https://wa.me/573027453839" target="_blank" aria-label="Contáctanos"><i
-                                    class="fa fa-whatsapp"></i></a>
+                        <div id="iconos-fa-redes-pc" class="social-icons another pc">
+                            <template v-for="social in socialLinks" :key="social.name">
+                            <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                            </template>
                         </div>
                     </div>
                 </div>
