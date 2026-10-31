@@ -93,23 +93,23 @@ const items = Vue.createApp({
       articles: [
         {
           title: "Talleres",
-          url: "/talleres",
+          url: "talleres",
         },
         {
           title: "Alojamientos",
-          url: "/alojamientos",
+          url: "alojamientos",
         },
         {
           title: "Tours y Lugares Cercanos",
-          url: "/tours-sierra-nevada-santa-marta",
+          url: "tours-sierra-nevada-santa-marta",
         },
         {
           title: "Blog",
-          url: "/blog",
+          url: "blog",
         },
         {
           title: "Nosotros",
-          url: "/nosotros",
+          url: "nosotros",
         },
       ],
     });
