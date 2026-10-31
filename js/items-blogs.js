@@ -59,8 +59,8 @@ const logo = Vue.createApp({
       articles: [
         {
           title: "Finca Natural Mystic",
-          url: "https://fincanaturalmystic.com",
-          image: "/recursos/natural-mystic.webp",
+          url: "",
+          image: "../recursos/natural-mystic.webp",
         },
       ],
     });
