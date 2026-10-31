@@ -92,6 +92,10 @@ const items = Vue.createApp({
       searchString: "",
       articles: [
         {
+          title: "Inicio",
+          url: "index",
+        },
+        {
           title: "Talleres",
           url: "talleres",
         },
@@ -303,7 +307,7 @@ const itemspiedepagina = Vue.createApp({
       articles: [
         {
           title: "Home",
-          url: "",
+          url: "index",
         },
         {
           title: "Talleres",
