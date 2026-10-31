@@ -8,22 +8,22 @@ const talleres = Vue.createApp({
       articles: [
         {
           title: "TALLERES DE TEJIDOS EN CROCHET",
-          url: "fincanaturalmystic.com/taller-tejido-en-crochet.html",
+          url: "taller-tejido-en-crochet.html",
           image: "recursos/galeria/portada-otros-talleres/taller-de-crochet-para-principiantes.webp",
         },
         {
           title: "TALLERES DE TINTES NATURALES",
-          url: "fincanaturalmystic.com/taller-de-tatakizome.html",
+          url: "taller-de-tatakizome.html",
           image: "recursos/galeria/portada-otros-talleres/taller-de-martillar-flores.webp",
         },
         {
           title: "TALLER DE GERMINAR, SEMBRAR Y COSECHAR",
-          url: "fincanaturalmystic.com/taller-germinar-sembrar-cosechar.html",
+          url: "taller-germinar-sembrar-cosechar.html",
           image: "recursos/galeria/portada-otros-talleres/germinar-sembrar-cosechar.webp",
         },
         {
           title: "TOUR DE PERMACULTURA",
-          url: "fincanaturalmystic.com/tour-de-permacultura-sierra-nevada-santa-marta-tayrona.html",
+          url: "tour-de-permacultura-sierra-nevada-santa-marta-tayrona.html",
           image: "recursos/galeria/portada-otros-talleres/permacultura.webp",
         },
       ],
@@ -93,23 +93,23 @@ const items = Vue.createApp({
       articles: [
         {
           title: "Talleres",
-          url: "../talleres",
+          url: "/talleres",
         },
         {
           title: "Alojamientos",
-          url: "../alojamientos",
+          url: "/alojamientos",
         },
         {
           title: "Tours y Lugares Cercanos",
-          url: "../tours-sierra-nevada-santa-marta",
+          url: "/tours-sierra-nevada-santa-marta",
         },
         {
           title: "Blog",
-          url: "../blog",
+          url: "/blog",
         },
         {
           title: "Nosotros",
-          url: "../nosotros",
+          url: "/nosotros",
         },
       ],
     });
@@ -307,23 +307,23 @@ const itemspiedepagina = Vue.createApp({
         },
         {
           title: "Talleres",
-          url: "../talleres",
+          url: "/talleres",
         },
         {
           title: "Alojamientos",
-          url: "../alojamientos",
+          url: "/alojamientos",
         },
         {
           title: "Tours y Lugares Cercanos",
-          url: "../tours-sierra-nevada-santa-marta",
+          url: "/tours-sierra-nevada-santa-marta",
         },
         {
           title: "Blog",
-          url: "../blog",
+          url: "/blog",
         },
         {
           title: "Nosotros",
-          url: "../nosotros",
+          url: "/nosotros",
         },
       ],
     });
