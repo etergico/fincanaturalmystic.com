@@ -142,7 +142,7 @@ const botondereservapc = Vue.createApp({
       articles: [
         {
           title: "RESERVAR AHORA",
-          url: "https://wa.me/573027453839",
+          url: "https://wa.me/573112336635",
         },
       ],
     });
@@ -174,7 +174,7 @@ const botondereservamovil = Vue.createApp({
       articles: [
         {
           title: "RESERVAR AHORA",
-          url: "https://wa.me/573027453839",
+          url: "https://wa.me/573112336635",
         },
       ],
     });
@@ -223,7 +223,7 @@ const numerodecontacto = Vue.createApp({
       articles: [
         {
           title: "Contacto Directo para Reservas : +57 302 7453839",
-          url: "tel:+573027453839",
+          url: "tel:+573112336635",
         },
       ],
     });
@@ -307,23 +307,23 @@ const itemspiedepagina = Vue.createApp({
         },
         {
           title: "Talleres",
-          url: "/talleres",
+          url: "talleres",
         },
         {
           title: "Alojamientos",
-          url: "/alojamientos",
+          url: "alojamientos",
         },
         {
           title: "Tours y Lugares Cercanos",
-          url: "/tours-sierra-nevada-santa-marta",
+          url: "tours-sierra-nevada-santa-marta",
         },
         {
           title: "Blog",
-          url: "/blog",
+          url: "blog",
         },
         {
           title: "Nosotros",
-          url: "/nosotros",
+          url: "nosotros",
         },
       ],
     });
@@ -356,7 +356,7 @@ const botondereservapiedepagina = Vue.createApp({
       articles: [
         {
           title: "RESERVAR",
-          url: "https://wa.me/573027453839",
+          url: "https://wa.me/573112336635",
         },
       ],
     });
@@ -462,7 +462,7 @@ const botonflotante = Vue.createApp({
       articles: [
         {
           title: "WhatsApp Finca Natural Mystic",
-          url: "https://wa.me/573027453839",
+          url: "https://wa.me/573112336635",
         },
       ],
     });
