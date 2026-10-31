@@ -8,22 +8,22 @@ const talleres = Vue.createApp({
       articles: [
         {
           title: "TALLERES DE TEJIDOS EN CROCHET",
-          url: "/taller-tejido-en-crochet",
+          url: "../taller-tejido-en-crochet",
           image: "/recursos/galeria/portada-otros-talleres/taller-de-crochet-para-principiantes.webp",
         },
         {
           title: "TALLERES DE TINTES NATURALES",
-          url: "/taller-de-tatakizome",
+          url: "../taller-de-tatakizome",
           image: "/recursos/galeria/portada-otros-talleres/taller-de-martillar-flores.webp",
         },
         {
           title: "TALLER DE GERMINAR, SEMBRAR Y COSECHAR",
-          url: "/taller-germinar-sembrar-cosechar",
+          url: "../taller-germinar-sembrar-cosechar",
           image: "/recursos/galeria/portada-otros-talleres/germinar-sembrar-cosechar.webp",
         },
         {
           title: "TOUR DE PERMACULTURA",
-          url: "/tour-de-permacultura-sierra-nevada-santa-marta-tayrona",
+          url: "../tour-de-permacultura-sierra-nevada-santa-marta-tayrona",
           image: "/recursos/galeria/portada-otros-talleres/permacultura.webp",
         },
       ],
@@ -49,88 +49,6 @@ const talleres = Vue.createApp({
 
 talleres.mount("#talleresdisponibles");
 
-
-
-// lOGO -ENCABEZADO //
-const logo = Vue.createApp({
-  setup() {
-    const state = reactive({
-      searchString: "",
-      articles: [
-        {
-          title: "Finca Natural Mystic",
-          url: "",
-          image: "../recursos/natural-mystic.webp",
-        },
-      ],
-    });
-
-    const filteredArticles = computed(() => {
-      if (!state.searchString) {
-        return state.articles;
-      }
-
-      const searchString = state.searchString.trim().toLowerCase();
-      return state.articles.filter((item) =>
-        item.title.toLowerCase().includes(searchString)
-      );
-    });
-
-    return {
-      state,
-      filteredArticles,
-    };
-  },
-});
-
-logo.mount("#logo");
-
-// ENCABEZADO - ITEMS MENU //
-const items = Vue.createApp({
-  setup() {
-    const state = reactive({
-      searchString: "",
-      articles: [
-        {
-          title: "Talleres",
-          url: "/talleres",
-        },
-        {
-          title: "Alojamientos",
-          url: "/alojamientos",
-        },
-        {
-          title: "Tours y Lugares Cercanos",
-          url: "/tours-sierra-nevada-santa-marta",
-        },
-        {
-          title: "Blog",
-          url: "/blog",
-        },
-        {
-          title: "Nosotros",
-          url: "/nosotros",
-        },
-      ],
-    });
-
-    const filteredArticles = computed(() => {
-      if (!state.searchString) {
-        return state.articles;
-      }
-
-      const searchString = state.searchString.trim().toLowerCase();
-      return state.articles.filter((item) =>
-        item.title.toLowerCase().includes(searchString)
-      );
-    });
-
-    return {
-      state,
-      filteredArticles,
-    };
-  },
-});
 
 items.mount("#menu-blog");
 
@@ -254,7 +172,7 @@ const logopiedepagina = Vue.createApp({
       searchString: "",
       articles: [
         {
-          url: "https://fincanaturalmystic.com",
+          url: "",
           image: "../recursos/finca-natural-mystic.webp",
         },
       ],
