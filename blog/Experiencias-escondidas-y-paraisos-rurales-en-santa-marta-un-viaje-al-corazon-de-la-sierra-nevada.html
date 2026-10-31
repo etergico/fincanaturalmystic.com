@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="image" href="img/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada.webp">
+
+    <title>4 Experiencias Escondidas y Paraísos Rurales en Santa Marta: Un Viaje al Corazón de la Sierra Nevada</title>
+    <meta name="description" content="Santa Marta, con su rica biodiversidad y su pasado ancestral, esconde tesoros invaluables más allá de sus playas. Sumérgete en cuatro experiencias únicas.">
+    <meta name="author" content="Finca Natural Mystic">
+    <link rel="icon" type="image/webp" href="/recursos/favicon.webp"/>
+    <link rel="apple-touch-icon" href="/recursos/favicon.webp">
+    <link rel="canonical" href="https://fincanaturalmystic.com/blog/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada">
+    
+    <meta name="language" content="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=10, must-revalidate">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index, follow, max-snippet:177">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fincanaturalmystic.com/blog/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada">
+    <meta property="og:title" content="4 Experiencias Escondidas y Paraísos Rurales en Santa Marta: Un Viaje al Corazón de la Sierra Nevada">
+    <meta property="og:description" content="Santa Marta, con su rica biodiversidad y su pasado ancestral, esconde tesoros invaluables más allá de sus playas. Sumérgete en cuatro experiencias únicas.">
+    <meta property="og:image" content="https://fincanaturalmystic.com/blog/img/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada.webp">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Finca Natural Mystic">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "4 Experiencias Escondidas y Paraísos Rurales en Santa Marta: Un Viaje al Corazón de la Sierra Nevada",
+            "image": "https://fincanaturalmystic.com/blog/img/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada.webp",
+            "author": {
+            "@type": "Person",
+            "name": "Marion"
+            },
+            "publisher": {
+            "@type": "Organization",
+            "name": "Finca Natural Mystic",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://fincanaturalmystic.com/recursos/favicon.webp"
+            }
+            },
+            "datePublished": "2025-01-09",
+            "dateModified": "2025-01-09",
+            "articleBody": "Santa Marta, con su rica biodiversidad y su pasado ancestral, esconde tesoros invaluables más allá de sus playas. Sumérgete en cuatro experiencias únicas."
+        }
+    </script> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="top header-blog">
+        <div id="mySidenav" class="sidenav">
+            <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+            <div id="menu-blog" v-cloak>
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <a :href="article.url" :title="`Ir a ${article.title}`" class="article-link">{{ article.title }}</a>
+                </template>
+            </div>
+    
+            <div id="iconos-fa-redes-movil" class="social-icons another movil">
+                <template v-for="social in socialLinks" :key="social.name">
+                    <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                </template>
+            </div>
+        </div>
+        <nav id="navbar">
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="col-lg-2 col-md-7 col-5 align-self-center" v-cloak>
+                        <template v-for="article in filteredArticles" :key="article.url">
+                            <a :href="article.url" alt="Finca Natural Mystic" title="Finca Natural Mystic">
+                                <img :src="article.image" alt="Logo Finca Natural Mystic" />
+                            </a>
+                        </template>
+                    </div>
+                    <div class="col-lg-10 col-md-5 col-7 align-self-center">
+                        <div class="social-icons square">
+                            <div id="page-content-wrapper">
+                                <span class="slide-menu" onclick="openNav()"><i class="fa fa-bars"
+                                        aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div id="iconos-fa-redes-pc" class="social-icons another pc">
+                            <template v-for="social in socialLinks" :key="social.name">
+                                <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="blog_single">
+        <div class="container">
+            <h1>4 Experiencias Escondidas y Paraísos Rurales en Santa Marta: Un Viaje al Corazón de la Sierra Nevada</h1>
+            <div class="inner-text">
+                <date>Enero 09, 2025 Posted by:  <span><a href="#">Marion</a></span></date>
+            </div>
+            <div class="mbm_social">
+                <div class="sharethis-inline-share-buttons"></div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="img/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada.webp" style="height: 600px;" alt=""
+                        class="thumbnail image">
+                
+                    <p>Santa Marta, con su rica biodiversidad y su pasado ancestral, esconde tesoros invaluables más
+                        allá de sus playas. Sumérgete en cuatro experiencias únicas que te conectarán con la
+                        naturaleza, la cultura y el espíritu de la Sierra Nevada de Santa Marta.                        
+                    </p>
+                    <h2>1. Finca Miramar en Buritaca: Del Cacao y la Transformación</h2>
+                    <p>
+                        En las faldas de la Sierra Nevada, la finca Miramar te invita a un viaje al corazón de la
+                        transformación. Esta familia, que alguna vez cultivó coca, decidió dar un giro radical y apostar
+                        por el cacao, un producto que hoy exportan a todo el mundo. Durante el tour, conocerás de
+                        cerca el proceso de cultivo, fermentación y tostado del cacao, y podrás degustar deliciosos
+                        chocolates artesanales. Esta experiencia es una muestra de resiliencia y esperanza, y una
+                        oportunidad para apoyar una economía sostenible y justa.                        
+                    </p>
+                    <h3>2. Merkaba Elixir Lounge: Un Santuario de Bienestar en las Alturas</h3>
+                    <p>
+                        En lo alto de la montaña, con vistas panorámicas al mar, se encuentra Merkaba Elixir Lounge,
+                        un espacio mágico dedicado al bienestar y la conexión espiritual. Aquí podrás participar en
+                        danzas extáticas, ceremonias de cacao, baños de sonido y disfrutar de una deliciosa kombucha
+                        o un bowl de açaí. La combinación de la naturaleza, la música y las prácticas ancestrales te
+                        transportará a un estado de profunda relajación y armonía.
+                    </p>
+                   
+                    <h4>3. Yay Sustainable Lodge: Un Refugio Ecológico en la Sierra Nevada</h4>
+                    <p>
+                        Si buscas una experiencia más inmersa en la naturaleza, el Yay Sustainable Lodge es el lugar
+                        ideal. Rodeado de exuberante vegetación, este lodge ofrece piscinas naturales, ríos cristalinos
+                        y una cocina orgánica que utiliza los productos frescos de su huerto. Además, podrás participar
+                        en clases de yoga y disfrutar de la tranquilidad de la montaña.
+                    </p>
+                
+                    <h5>4. Teiku: Conexión con la Cultura Indígena</h5>
+                    <p>
+                        Teiku es un ejemplo vivo de cómo las comunidades indígenas preservan sus tradiciones y
+                        conocimientos ancestrales. Aquí podrás experimentar un temazcal, una ceremonia de
+                        purificación tradicional, participar en círculos de mujeres y aprender sobre los principios de la
+                        permacultura. La comunidad te recibirá con los brazos abiertos, compartiendo contigo su
+                        sabiduría y su amor por la Tierra.
+                    </p>
+                    <p>
+                        <b>¿Te atreves a salir de lo común y explorar los rincones más auténticos de Santa Marta? Estos
+                            cuatro destinos te sorprenderán con su belleza natural, su riqueza cultural y su energía
+                            revitalizante. ¡Anímate a vivir una experiencia que recordarás toda la vida!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-page-another">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 heading">
+                    <h5>ARTICULOS SIMILARES</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <a href="Sembrar-bienestar-como-la-jardineria-cultiva-nuestra-salud-mental">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <figure>
+                                            <img src="img/Sembrar-bienestar-como-la-jardineria-cultiva-nuestra-salud-mental.webp">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-8 inner-content">
+                                        <h4>Sembrar bienestar: Cómo la jardinería cultiva nuestra salud mental</h4>
+                                        <span>Leer más</span>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <a href="Tu-botiquin-verde-7-plantas-medicinales-para-cultivar-en-la-costa-caribe">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <figure>
+                                            <img src="img/Tu-botiquin-Verde-7-plantas-medicinales-para-cultivar-en-la-costa-caribe.webp">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-8 inner-content">
+                                        <h4>Tu Botiquín Verde: 7 Plantas Medicinales para Cultivar en la Costa Caribe</h4>
+                                        <span>Leer más</span>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Footer-->
+     <footer class="contact">
+        <div class="gradient"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 columns-1">
+                    <address>
+                        <p id="direccion-ubicacion">{{ state.location.address }}</p>
+                    </address>
+                    <address>
+                        <p id="numero-de-contacto">
+                            <template v-for="article in filteredArticles" :key="article.url">
+                                <span><a :href="article.url" :title="`Llamar ${article.title}`" target="_blank"
+                                        class="article-link">{{ article.title }}</a></span>
+                            </template>
+                        </p>
+                    </address>
+                    <div id="logo-pie-de-pagina">
+                        <template v-for="article in filteredArticles" :key="article.url">
+                            <a :href="article.url" alt="Finca Natural Mystic" title="Finca Natural Mystic" alt="Logo Finca Natural Mystic"><img
+                                    :src="article.image" alt=""/></a>
+                        </template>
+                    </div>
+                    <div id="iconos-fa-redes-pie-de-pagina" class="social-icons another">
+                        <template v-for="social in socialLinks" :key="social.name">
+                            <a :href="social.url" target="_blank" title="Contáctanos" alt=""><i :class="social.icon" aria-hidden="true"></i></a>
+                        </template>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 col-12 columns-2 newsletter-blog">
+                    <section id="newsletter-section">
+                        <h5>{{ state.title }}</h5>
+                        <p>{{ state.description }}</p>
+                    </section>
+                    <form id="contactForm" class="row form-inline">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo" required/>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" name="contacto" class="form-control" placeholder="Email o WhatsApp" required/>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Le2xOkqAAAAAFzLUUrNdtjrhFN-QNkyMhFzAs1Y"></div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        </div>
+                    </form><br>
+                    <!-- Mensaje de confirmación -->
+                    <div id="mensaje"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div id="menu-blog-pie-de-pagina" class="row">
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <span class="nav-item"><a :href="article.url" :title="`Ir a ${article.title}`"
+                            class="nav-link">{{article.title}}</a></span>
+                </template>
+            </div>
+            <div id="boton-reservar-blog-pie-de-pagina">
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <ul>
+                        <li class="boton-footer"><a :href="article.url" target="_blank"
+                                :title="`Ir a ${article.title}`" class="nav-link">{{article.title}}</a></li>
+                    </ul>
+                </template>
+            </div>
+        </div>
+        <p>
+            <span id="copyright-text">{{ state.text }}</span>
+            <b id="numeroRNT">
+                <template v-for="article in filteredArticles">
+                    <span :title="`${article.title}`" target="_blank" class="article-link">{{ article.title }}</></span>
+                </template>
+            </b>.
+            <span id="diseñadorweb">
+                {{ state.text }}
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <span>
+                        <a :href="article.url" :title="article.title" target="_blank" class="article-link" title="Contactar">
+                            {{ article.title }}
+                        </a>
+                    </span>
+                </template>
+            </span>
+        </p>
+    </div>
+    
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+    <span id="botonflotantewhatsapp">
+        <template v-for="article in filteredArticles" :key="article.url">
+            <a :href="article.url" target="_blank" class="boton-whatsapp"  aria-label="Contáctanos" alt="">
+                <div class="tooltip">¿Necesitas Ayuda? <b>Chatea con nosotros</b></div><i class="fa fa-whatsapp"></i>
+            </a>
+        </template> 
+    </span>
+
+    <!--Share This-->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=66f5e6f6e960c500199ecb07&product=botones-para-compartir-en-linea' async='async'></script>
+
+    <script async src="/js/animate.js"></script>
+    <script async src="/js/custom.js"></script>
+    <script src="/js/base-de-datos.js"></script>
+    <script src="https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js"></script>
+    <script src="/js/items-blogs.js"></script>
+    <script src="/js/iconos-redes-blog.js"></script>
+    <script async>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1XF3ENL36Y');
+    </script>
+</body>
+
+</html>

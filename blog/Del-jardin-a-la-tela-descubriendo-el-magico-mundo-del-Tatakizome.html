@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="image" href="img/Del-jardin-a-la-tela-Descubriendo-el-magico-mundo-del-Tatakizome.webp">
+
+    <title>Del jardín a la tela: Descubriendo el mágico mundo del Tatakizome</title>
+    <meta name="description" content="En Finca Natural Mystic, cada día es una celebración de la vida. Rodeados de la exuberante vegetación de la Sierra Nevada, hemos cultivado un jardín lleno de colores y aromas.">
+    <meta name="author" content="Finca Natural Mystic">
+    <link rel="icon" type="image/webp" href="/recursos/favicon.webp"/>
+    <link rel="apple-touch-icon" href="/recursos/favicon.webp">
+    <link rel="canonical" href="https://fincanaturalmystic.com/blog/Del-jardin-a-la-tela-descubriendo-el-magico-mundo-del-Tatakizome">
+   
+    <meta name="language" content="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=10, must-revalidate">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index, follow, max-snippet:177">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fincanaturalmystic.com/blog/Del-jardin-a-la-tela-descubriendo-el-magico-mundo-del-Tatakizome">
+    <meta property="og:title" content="Del jardín a la tela: Descubriendo el mágico mundo del Tatakizome">
+    <meta property="og:description" content="En Finca Natural Mystic, cada día es una celebración de la vida. Rodeados de la exuberante vegetación de la Sierra Nevada, hemos cultivado un jardín lleno de colores y aromas...">
+    <meta property="og:image" content="https://fincanaturalmystic.com/blog/img/Del-jardin-a-la-tela-Descubriendo-el-magico-mundo-del-Tatakizome.webp">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Finca Natural Mystic">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Del jardín a la tela: Descubriendo el mágico mundo del Tatakizome",
+            "image": "https://fincanaturalmystic.com/blog/img/Del-jardin-a-la-tela-Descubriendo-el-magico-mundo-del-Tatakizome.webp",
+            "author": {
+            "@type": "Person",
+            "name": "Marion"
+            },
+            "publisher": {
+            "@type": "Organization",
+            "name": "Finca Natural Mystic",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://fincanaturalmystic.com/recursos/favicon.webp"
+            }
+            },
+            "datePublished": "2025-01-09",
+            "dateModified": "2025-01-09",
+            "articleBody": "En Finca Natural Mystic, cada día es una celebración de la vida. Rodeados de la exuberante vegetación de la Sierra Nevada, hemos cultivado un jardín lleno de colores y aromas..."
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="top header-blog">
+        <div id="mySidenav" class="sidenav">
+            <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+            <div id="menu-blog" v-cloak>
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <a :href="article.url" :title="`Ir a ${article.title}`" class="article-link">{{ article.title }}</a>
+                </template>
+            </div>
+    
+            <div id="iconos-fa-redes-movil" class="social-icons another movil">
+                <template v-for="social in socialLinks" :key="social.name">
+                    <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                </template>
+            </div>
+        </div>
+        <nav id="navbar">
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="col-lg-2 col-md-7 col-5 align-self-center" v-cloak>
+                        <template v-for="article in filteredArticles" :key="article.url">
+                            <a :href="article.url" alt="Finca Natural Mystic" title="Finca Natural Mystic">
+                                <img :src="article.image" alt="Logo Finca Natural Mystic" />
+                            </a>
+                        </template>
+                    </div>
+                    <div class="col-lg-10 col-md-5 col-7 align-self-center">
+                        <div class="social-icons square">
+                            <div id="page-content-wrapper">
+                                <span class="slide-menu" onclick="openNav()"><i class="fa fa-bars"
+                                        aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div id="iconos-fa-redes-pc" class="social-icons another pc">
+                            <template v-for="social in socialLinks" :key="social.name">
+                                <a :href="social.url" target="_blank"><i :class="social.icon" aria-hidden="true"></i></a>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="blog_single">
+        <div class="container">
+            <h1>Del jardín a la tela: Descubriendo elmágico mundo del Tatakizome</h1>
+            <div class="inner-text">
+                <date>Enero 09, 2025 Posted by:  <span><a href="#">Marion</a></span></date>
+            </div>
+            <div class="mbm_social">
+                <div class="sharethis-inline-share-buttons"></div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="img/Del-jardin-a-la-tela-Descubriendo-el-magico-mundo-del-Tatakizome.webp" alt=""
+                        class="thumbnail image">
+            
+                    <p>En Finca Natural Mystic, cada día es una celebración de la vida. Rodeados de la exuberante
+                        vegetación de la Sierra Nevada, hemos cultivado un jardín lleno de colores y aromas. Al
+                        contemplar nuestras flores, nos preguntamos: ¿cómo podemos llevar esta belleza natural a
+                        nuestras telas? Así nació nuestra fascinación por el <i>tatakizome</i>, una antigua técnica japonesa
+                        que nos permite imprimir directamente sobre la tela los colores y texturas de las plantas.
+                    </p>
+                    <h2>¿Qué es el Tatakizome? Un abrazo entre naturaleza y arte</h2>
+                    <p>
+                        ¿Alguna vez has imaginado transformar las delicadas hojas de un árbol en un estampado único
+                        en una tela? <i>El tatakizome</i>, una antigua técnica japonesa, te invita a hacer precisamente eso.
+                        Este arte ancestral consiste en martillar flores y hojas sobre una tela para extraer sus
+                        pigmentos naturales y crear diseños sorprendentes. Es una danza entre la naturaleza y la
+                        creatividad, <b>donde cada pieza es una obra de arte única.</b>
+                        <br><br><b>Materiales sencillos, resultados sorprendentes</b>
+                    </p>
+                
+                    <p>
+                      Para adentrarte en el mundo del tatakizome, necesitarás pocos materiales:
+                    </p>
+                    <ol>
+                        <li>● Tela natural: El algodón y el lino son excelentes opciones debido a su capacidad para
+                            absorber los tintes vegetales.</li>
+                        <li>● Flores y hojas: ¡Tu jardín será tu paleta de colores! Experimenta con diferentes
+                            especies para descubrir una amplia gama de tonalidades.</li>
+                        <li>● Martillo de goma o madera: Este será tu pincel para extraer los pigmentos de las plantas.</li>
+                        <li>● Tabla de madera: Para apoyar la tela y el martillo.</li>
+                    </ol>
+                    <h3>Experimentando con la naturaleza: Un viaje de colores</h3>
+                    <p>Cada planta tiene su propia paleta de colores y texturas. Algunas hojas te sorprenderán con
+                        tonos intensos y vibrantes, mientras que otras ofrecerán sutiles matices. ¡La experimentación
+                        es la clave!
+                    </p>
+                    <ol>
+                        <li>● Colores fugaces y permanentes: Algunos colores se desvanecerán con el tiempo,
+                            mientras que otros serán más duraderos. Esto le da al tatakizome un carácter único y
+                            efímero.</li>
+                        <li>● El arte de la observación: Observa la naturaleza con atención. Cada hoja, cada flor,
+                            tiene una historia que contar.</li>
+                    </ol>
+                    <h4>Cuidando tus obras de arte natural</h4>
+                    <p>Para que tus creaciones duren más tiempo, sigue estos consejos:
+                    </p>
+                    <ol>
+                        <li>● Evita la luz solar directa: La luz del sol puede decolorar los tintes naturales.</li>
+                        <li>● Evitar lavado: Lavar tus telas teñidas quitaría el pigmento y los colores de tu obra de
+                            arte</li>
+                        <li>● Almacenamiento adecuado: Guarda tus textiles en un lugar oscuro y seco,
+                            preferiblemente doblados o enrollados.</li>
+                    </ol>
+                    <h5>Tatakizome en Finca Natural Mystic: Una experiencia única</h5>
+                    <p>
+                        En Finca Natural Mystic, te invitamos a descubrir el maravilloso mundo del tatakizome.
+                        Ofrecemos talleres para todas las edades, donde podrás aprender esta técnica ancestral y
+                        conectar con la naturaleza de una manera especial.
+                    <h6>Beneficios del tatakizome:</h6>
+                    </p>
+                    <ol>
+                        <li>● Relajación: Es una actividad terapéutica que te permite desconectar y disfrutar del
+                            presente.</li>
+                        <li>● Creatividad: Desarrolla tu imaginación y te invita a experimentar con diferentes
+                            materiales y técnicas.</li>
+                        <li>● Conexión con la naturaleza: Te permite apreciar la belleza de las plantas y su
+                            capacidad para crear arte.</li>
+                    </ol>
+                    <p><b>¡Anímate a crear tu propia obra maestra y llévate a casa un pedazo de la naturaleza!</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-page-another">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 heading">
+                    <h5>ARTICULOS SIMILARES</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <a href="Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <figure>
+                                            <img src="img/Experiencias-escondidas-y-paraisos-rurales-en-santa-marta-un-viaje-al-corazon-de-la-sierra-nevada.webp" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-8 inner-content">
+                                        <h4>4 Experiencias Escondidas y Paraísos Rurales en Santa Marta: Un Viaje al Corazón de la Sierra Nevada</h4>
+                                        <span>Leer más</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <a href="Sembrar-bienestar-como-la-jardineria-cultiva-nuestra-salud-mental">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <figure>
+                                            <img src="img/Sembrar-bienestar-como-la-jardineria-cultiva-nuestra-salud-mental.webp" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-8 inner-content">
+                                        <h4>Sembrar bienestar: Cómo la jardinería cultiva nuestra salud mental</h4>
+                                        <span>Leer más</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="contact">
+        <div class="gradient"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 columns-1">
+                    <address>
+                        <p id="direccion-ubicacion">{{ state.location.address }}</p>
+                    </address>
+                    <address>
+                        <p id="numero-de-contacto">
+                            <template v-for="article in filteredArticles" :key="article.url">
+                                <span><a :href="article.url" :title="`Llamar ${article.title}`" target="_blank"
+                                        class="article-link">{{ article.title }}</a></span>
+                            </template>
+                        </p>
+                    </address>
+                    <div id="logo-pie-de-pagina">
+                        <template v-for="article in filteredArticles" :key="article.url">
+                            <a :href="article.url" alt="Finca Natural Mystic" title="Finca Natural Mystic" alt="Logo Finca Natural Mystic"><img
+                                    :src="article.image" alt=""/></a>
+                        </template>
+                    </div>
+                    <div id="iconos-fa-redes-pie-de-pagina" class="social-icons another">
+                        <template v-for="social in socialLinks" :key="social.name">
+                            <a :href="social.url" target="_blank" title="Contáctanos" alt=""><i :class="social.icon" aria-hidden="true"></i></a>
+                        </template>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 col-12 columns-2 newsletter-blog">
+                    <section id="newsletter-section">
+                        <h5>{{ state.title }}</h5>
+                        <p>{{ state.description }}</p>
+                    </section>
+                    <form id="contactForm" class="row form-inline">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo" required/>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" name="contacto" class="form-control" placeholder="Email o WhatsApp" required/>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Le2xOkqAAAAAFzLUUrNdtjrhFN-QNkyMhFzAs1Y"></div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        </div>
+                    </form><br>
+                    <!-- Mensaje de confirmación -->
+                    <div id="mensaje"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div id="menu-blog-pie-de-pagina" class="row">
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <span class="nav-item"><a :href="article.url" :title="`Ir a ${article.title}`"
+                            class="nav-link">{{article.title}}</a></span>
+                </template>
+            </div>
+            <div id="boton-reservar-blog-pie-de-pagina">
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <ul>
+                        <li class="boton-footer"><a :href="article.url" target="_blank"
+                                :title="`Ir a ${article.title}`" class="nav-link">{{article.title}}</a></li>
+                    </ul>
+                </template>
+            </div>
+        </div>
+        <p>
+            <span id="copyright-text">{{ state.text }}</span>
+            <b id="numeroRNT">
+                <template v-for="article in filteredArticles">
+                    <span :title="`${article.title}`" target="_blank" class="article-link">{{ article.title }}</></span>
+                </template>
+            </b>.
+            <span id="diseñadorweb">
+                {{ state.text }}
+                <template v-for="article in filteredArticles" :key="article.url">
+                    <span>
+                        <a :href="article.url" :title="article.title" target="_blank" class="article-link" title="Contactar">
+                            {{ article.title }}
+                        </a>
+                    </span>
+                </template>
+            </span>
+        </p>
+    </div>
+    
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+    <span id="botonflotantewhatsapp">
+        <template v-for="article in filteredArticles" :key="article.url">
+            <a :href="article.url" target="_blank" class="boton-whatsapp"  aria-label="Contáctanos" alt="">
+                <div class="tooltip">¿Necesitas Ayuda? <b>Chatea con nosotros</b></div><i class="fa fa-whatsapp"></i>
+            </a>
+        </template> 
+    </span>
+
+    <!--Share This-->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=66f5e6f6e960c500199ecb07&product=botones-para-compartir-en-linea' async='async'></script>
+
+    <script async src="/js/animate.js"></script>
+    <script async src="/js/custom.js"></script>
+    <script src="/js/base-de-datos-blog.js"></script>
+    <script src="https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js"></script>
+    <script src="/js/items-blogs.js"></script>
+    <script src="/js/iconos-redes-blog.js"></script>
+    <script async>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1XF3ENL36Y');
+    </script>
+</body>
+
+</html>
